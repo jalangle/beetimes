@@ -2,14 +2,14 @@
 
 def main():
 	count = 0
-	to_find = "otiznga"
+	to_find = "blmtanu"
 	
 	with open("wordlist.txt", 'r') as f:
 		for word in f:
 			word = word.rstrip()
 			if(len(word) < 4): #remove anything less than 4 characters as too short to be included
 				continue
-			if(len(word) > 10): #remove anything longer than 10 characters as unlikely to be included
+			if(len(word) > 15): #remove anything longer than 10 characters as unlikely to be included
 				continue
 			if(not word.isalpha()): #remove anything that isn't entirely alphabetic
 				continue
